@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <input class="checkbox-tools" type="radio" name="tools" id="eclipse">
+            <label class="checkboxMetin" for="eclipse">
+              <h3>Tek Çekim</h3>
+              <p>Yurt içi tüm banka</p> 
+              <p>ve kredi kartları</p>  
+            </label>
+            <input class="checkbox-tools" type="radio" name="tools" id="square">
+            <label class="checkboxMetin" for="square">
+              <h3>Taksitli Ödeme</h3> 
+              <p>Advantage / Sağlam Kart / Bonus</p>
+              <p> CardFinans / Maximum / Paraf /World</p> 
+          </div>
+          <div class="quantity" class="text">Toplam Ödeme Tutarı: <b>99,99 TL</b></div>
+        </div>
+        <br />
+         <div class="row quantityy">
+          <div class="col-xs-4">
+            <div class="col-xs-4">
+                  <label for="fullName" class="text header">Kart Üzerindeki Ad, Soyad:</label> <br>
+                  <input type="text" class="sinif" id="kartSahibi"  maxlength="25" size="60">
+                </div> 
+              </div>
+              <br />
+              <div class="row bilgiler">
+                <label for="cardNo" class="text header">Kart Numarası:</label> <br>
+                  <div class="card">
+                    <input type="text" class="sinif" id="a"  maxlength="4" size="7" placeholder="* * * *">  
+                    <input type="text" class="sinif" id="b"  maxlength="4" size="7" placeholder="* * * *"> 
+                    <input type="text" class="sinif" id="c"  maxlength="4" size="7" placeholder="* * * *"> 
+                    <input type="text" class="sinif" id="d"  maxlength="4" size="7" placeholder="* * * *">
+                  </div>    
+              </div>
+              <br>
+              <label for="date" class="text header">Kart Son Kullanma Tarihi:</label><br>
+              <div class="row ay">
+                    <div><input type="text" class="sinif" id="date" maxlength="2" size="23" placeholder="Ay"></div>
+                    <div>/</div>
+                  <div><input type="text" class="sinif" id="date" maxlength="4" size="23" placeholder="Yıl"></div>  
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-2">
+                  <label for="cvv" class="text header">CVV Güvenlik Kodu:</label><br>
+                  <input type="text" class="sinif" id="cvv"  maxlength="3" size="63" placeholder="CVV">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+        <div class="row tikbox">
+          <input id="tik" type="checkbox" name="mailing" value="Mail"/>
+          <label for="tik text">Kolay ödeme için kartımı hatırla</label>
+        </div>
+        <div class="row btn-row">
+          <button id="btn" class="btn" type="submit"><a href="#">Ödeme Yap<a/></button>
+        </div>
+        <div class="pictures">
+          <img id="express" width="100" src="/pictures/american expres.png" alt="">
+          <img id="visa" width="80" src="/pictures/visa.png" alt="">
+          <img id="master" width="50" src="/pictures/master.png" alt="">
+          <img id="union" width="50" src="/pictures/unionpay.png" alt="">
+        </div>
+      </div>
+      <script src="/JS/script.js"></script>
+</body>
+</html>
